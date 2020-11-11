@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .item{
+      height: 100px;
+      background-color: #eee;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .item:first-child div{
+      height: 100%;
+      width: 0px;
+      background-color: #fa0;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    span{
+      background-color: #aee;
+      border: 1px solid #000;
+      vertical-align: middle;
+    }
+    img{
+      border: 1px solid #000;
+      vertical-align: middle;
+    }
+    .txt{
+      border: 1px solid #000;
+      width: 30px;
+      background-color: #fa0;
+    }
+  </style>
+</head>
+<body>
+  <div class="item">
+    <div></div>
+    <span>aaa</span>
+    <span>aaa</span>
+    <span>aaa</span>
+    <img src="https://picsum.photos/20/20/?random=1">
+  </div>
+  <div class="item">
+    <div class="txt">bbb</div>
+    <div class="txt">bbb</div>
+    <div class="txt">bbb</div>
+  </div>
+</body>
+</html>
