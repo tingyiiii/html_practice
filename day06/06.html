@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .box{
+      width: 300px;
+      margin: auto;
+      margin-top: 10px;
+      padding: 20px;
+      position: relative;
+      border: 1px solid #af0;
+      box-shadow: -3px 0px 10px #0005;
+    }
+    .box .deco{
+      position: absolute;
+      background-color: #af0;
+      padding: 5px;
+      top: 20px;
+      left: -10px;
+      box-shadow: 1px 1px 5px #000a;
+    }
+    .deco::after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 7px solid #6b0;
+      border-left: 9px solid transparent;
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+    .sale{
+      width: 50px;
+      height: 50px;
+      background-color: #af0;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .sale::after{
+      content: '';
+      border-left: 25px solid #af0;
+      border-right: 25px solid #af0;
+      border-bottom: 10px solid transparent;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    .box.img{
+      width: 100%;
+    }
+    .img img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+    .box .txt{
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="sale">
+      SALE
+    </div>
+    <div class="deco">
+      ＸＸＸＸＸＸ
+    </div>
+    <div class="img">
+      <img src="https://picsum.photos/300/300/?random=1">
+    </div>
+    <div class="txt">
+      <h3>lorem</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem totam illo odio eos autem voluptate non ipsa odit. In, reiciendis eius. Sunt exercitationem veniam ea eaque ducimus a molestias!</p>
+    </div>
+  </div>
+</body>
+</html>
