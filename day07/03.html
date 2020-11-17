@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .item{
+      height: 200px;
+      background-color: #aae;
+      margin: 10px;
+    }
+    /* 手機上一欄，平板電腦上三欄(寬960px) */
+    @media screen and (min-width: 768px){
+      .wrap{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item{
+        background-color: #eaa;
+        /* 固定的margin(常用) */
+        width: calc(33.3333333% - 20px);
+
+        /* 動態的margin 
+        300px/960px*100 
+        width: 31.25%;
+        10px/960px*100
+        margin: 1.041666%; */
+      }
+    }
+    @media screen and (min-width: 992px){
+      .wrap{
+        width: 960px;
+        margin: auto;
+      }
+      .item{
+        background-color: #aea;
+      }
+    }
+  </style>
+<body>
+  <div class="wrap">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  
+</body>
+</html>
