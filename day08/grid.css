@@ -51,9 +51,6 @@
   .col-md-10{ width: 83.333333%; }
   .col-md-11{ width: 91.666666%; }
   .col-md-12{ width: 100%; }
-  .shopline .row:nth-child(odd){
-  flex-direction: row-reverse;
-}
 }
 @media screen and (min-width: 992px){
   .col-lg-1{ width: 8.333333%; }
